@@ -8,9 +8,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(task1Intership main.cpp
     doublylinkedlistrandaccess.h doublylinkedlistrandaccess.cpp
     doublylinkedlistserializer.h doublylinkedlistserializer.cpp
-
     listutils.h listutils.cpp
     doublylinkedlistStarter.h)
+
+file(COPY ${CMAKE_SOURCE_DIR}/data DESTINATION ${CMAKE_BINARY_DIR})
 
 include(GNUInstallDirs)
 install(TARGETS task1Intership
